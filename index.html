@@ -7,7 +7,8 @@
 <title>Tony Smith - Portfolio</title>
 <link rel="stylesheet" type="text/css" href="styles/main_style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+
 
 </head>
 
@@ -16,28 +17,47 @@
 <body>
 
   <div class="container">
-    <div class="first-page">
+    <div id="pageonelink" class="first-page">
       <div class="first-page-title">
         <img id="signature" src="images/Signature_small.svg">
-          <div class="attributes">  
-          <ul id="scroll">
-            <li class="attribute">Web Developer</li>
-            <li class="attribute">Graphic Designer</li>
-            <li class="attribute">Musician</li>
-            <li class="attribute">Outdoorsman</li>
-            <li class="attribute">Dog's Best Friend</li>
-          </ul>
+          <div id="attributes">  
+           <ul id="list">
+            <li id="first" class="attribute"><span>WEB DEVELOPER</span></li>
+            <li id="second" class="attribute"><span>GRAPHIC DESIGNER</span></li>
+            <li id="third" class="attribute"><span>MUSICIAN</span></li>
+            <li id="fourth" class="attribute"><span>OUTDOORSMAN</span></li>
+            <li id="fifth" class="attribute"><span>DOG'S BEST FRIEND</span></li>
+           </ul>
           </div>
+      </div>
+      <div id="sidenav" class="menu">
+        <div id="home" class="submenu">
+          <a href="#pageonelink">HOME</a>
+        </div>
+        <div id="graphic" class="submenu">
+          <a href="#pagetwolink">GRAPHICS</a>
+        </div>
+        <div id="sounds" class="submenu">
+          <a href="#pagethreelink">SOUNDS</a>
+        </div>
       </div>
     </div>
     
     <div class="second-page">
-      <h2>Second page stuff..</h2>
+      <h2 id="pagetwolink">Second page stuff..</h2>
+      
     </div>
+    
+    <div class="third-page">
+      <h2 id="pagethreelink">Third page stuff..</h2>
+    </div>
+    
   </div>
   
-      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="scripts/main_java.js"></script>
+<script src="scripts/textition.js"></script> 
+
 </body>
 
 </html>
