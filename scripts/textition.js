@@ -69,7 +69,10 @@
 		// random distance
 		var val = function(val) {			
 			return Math.round(Math.random() * val) - val / 2;
-		}							
+		}
+    var yval = function(val) {
+      return Math.round(Math.random() * val) - val / -2;
+    }
 		
 		
 		
@@ -86,7 +89,7 @@
 						x = val(data.map.x)
 						break						
 					case 'y':
-						y = val(data.map.y)
+						y = yval(data.map.y)
 						break						
 					case 'z':
 						z = val(data.map.z)
