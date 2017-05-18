@@ -7,7 +7,7 @@ $(document).ready(function() {
 // Text rotator
 
   $('#list').textition({
-    autoplay: false,
+    autoplay: true,
     animation: 'ease-in-out',
     interval: 3.0,
     speed: 2.0,
