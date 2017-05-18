@@ -13,24 +13,43 @@ body {
 }
 
 .first-page {
-  height: 100vh;
-  max-height: 700px;
+  background: linear-gradient(160deg, #ededed, #ededed 60%, #c6c6c6);
 }
 
-.second-page, .third-page, .fourth-page {
-  height: 100vh;
-  max-height: 700px;
+#pagetwohead {
+  background: #abc8a7;
+  width: 100%;
+  height: 60px;
+}
+
+#pagethreehead {
+  background: #b5d1d6;
+  width: 100%;
+  height: 60px;
+}
+
+#pagefourhead {
+  background: #f6c87c;
+  width: 100%;
+  height: 60px;
+}
+
+
+.first-page, .second-page, .third-page, .fourth-page {
+  height: 90vh;
+
 }
 
 
 /* Title */
 
 .first-page-title {
-  padding-right: 25vh;
+  width: 33vw;
+  padding-right: 15vw;
   padding-top: 12vh;
   float: right;
   text-align: right; 
-  width: 500px
+  
 }
 
 #signature {
@@ -55,7 +74,7 @@ body {
 }
 
 .attribute {
-  font-size: 22pt;
+  font-size: 20pt;
   width: 100%;
   
 }
@@ -69,16 +88,79 @@ body {
   width: 30%;
   margin-left: 15%;
   position: relative;
-  overflow: hidden;
 }
 
 .icon {
   max-width: 100%;
+  max-height: 90%;
   transition: 0.8s;
   opacity: 0;
   display: block;
   position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+
+
+/* SVG Underline */
+
+#underline_drawing {
+  width: 80%;
+  position: absolute;
+  display: block;
   bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+
+@keyframes underlines {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+} 
+
+.path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation-name: underlines;
+  animation-duration: 2.3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+#top-line {
+  animation-delay: .8s;
+}
+
+#bottom-line {
+  animation-delay: .8s;
+}
+
+#point {
+  animation-name: point;
+  animation-duration: 2s;
+  animation-delay: 2.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode:both;
+}
+
+@keyframes point {
+  from {
+    cy: 50%;
+    cx: -20%;
+  }
+  to {
+    cy: 50%;
+    cx: 50%;
+  }
 }
 
 
@@ -96,8 +178,8 @@ body {
   font-weight: bold;
   vertical-align: middle;
   text-align: center;
-  line-height: 50px;
-  height: 50px;
+  line-height: 40px;
+  height: 40px;
   width: 20px;
   margin-top: 15px;
   margin-right: 100px;
@@ -107,13 +189,13 @@ body {
 }
 
 #home {
-  background-color: #c45454;
-  color: #c45454;
+  background-color: #dc8e8f;
+  color: #dc8e8f;
   transition: 0.4s;
 }
 
 #home:hover {
-  background-color: #c45454;
+  background-color: #dc8e8f;
   color: #191919;
   transition: 0.6s;
 }

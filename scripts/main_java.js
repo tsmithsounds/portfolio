@@ -7,10 +7,10 @@ $(document).ready(function() {
 // Text rotator
 
   $('#list').textition({
-    autoplay: true,
+    autoplay: false,
     animation: 'ease-in-out',
-    interval: 3.0,
-    speed: 2.0,
+    interval: 3,
+    speed: 1.5,
     map: {
     x: 70,
     y: 50,
