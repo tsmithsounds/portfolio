@@ -6,8 +6,9 @@
   <meta charset="UTF-8">
   <title>Tony Smith - Portfolio</title>
   <link rel="stylesheet" type="text/css" href="styles/main_style.css">
+  <!--<link rel="stylesheet" type="text/css" href="styles/normalize.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,900" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -26,22 +27,25 @@
             <li id="second" class="attribute"><span>GRAPHIC DESIGNER</span></li>
             <li id="third" class="attribute"><span>MUSICIAN</span></li>
             <li id="fourth" class="attribute"><span>OUTDOORSMAN</span></li>
-            <li id="fourth" class="attribute"><span>DOG'S BEST FRIEND</span></li>
+            <li id="fifth" class="attribute"><span>DOG'S BEST FRIEND</span></li>
            </ul>
           </div>
       </div>
       <div id="sidenav" class="menu">
-        <div id="home" class="submenu">
+        <div id="home" class="homebutton">
           <a href="#pageonelink">HOME</a>
         </div>
         <div id="web" class="submenu">
           <a href="#pagetwolink">WEB</a>
         </div>
         <div id="graphics" class="submenu">
-          <a href="#pagethreelink">GRAPHICS</a>
+          <a href="#pagethreelink">GRAPHIC</a>
         </div>
         <div id="sounds" class="submenu">
-          <a href="#pagefourlink">SOUNDS</a>
+          <a href="#pagefourlink">SOUND</a>
+        </div>
+        <div id="contact" class="submenu">
+          <a href="#pagefivelink">CONTACT</a>
         </div>
       </div>
       <div class="icons">
@@ -49,6 +53,7 @@
         <img class="icon" id="icon2" src="images/web_icon.png">
         <img class="icon" id="icon3" src="images/graphics_icon_duotone.png">
         <img class="icon" id="icon4" src="images/sounds_duotone_2.png">
+        <img class="icon" id="icon5" src="images/self_icon_cropped.png">
         <div id="underline_drawing">   
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 685.4 89.9">
             <title>underline_1</title>
@@ -64,23 +69,211 @@
       </div>
     </div>
     
+    <!-- Page Two / WEB -->
+    
     <div id="pagetwolink" class="second-page">
-      <div id="pagetwohead"></div>
+      <div id="pagetwohead" class="head"></div>
+      <div id="weblcontent" class="lcontent">
+        <div id="webtitle" class="pagetitle">
+          <h1>WEB</h1>
+        </div>
+        <div id="webtext" class="pagetext">
+          <p>This is what I can do for you or your company. This is the experience I have and the type of people I want to work with. Here's a specific description of potential problems you may have and how I can help solve them!</p>
+        </div>
+        <div id="webiconcontainer" class="iconcontainer">
+          <img src="images/web_icon_edge.png">
+          <ul id="webskills" class="skills">
+            <li>SKILL ONE</li>
+            <li>SKILL TWO</li>
+            <li>SKILL THREE</li>
+            <li>SKILL FOUR</li>
+            <li>SKILL FIVE</li>
+          </ul>
+        </div>
+      </div> 
+      <div id="webrcontent" class="rcontent">
+         <div id="webrcontainer" class="projectcontainer">
+          <div class="project wproj1">
+            <div class="projdesc">
+              <h3>PROJECT #1</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
+          <div class="project wproj2">
+            <div class="projdesc">
+              <h3>PROJECT #2</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
+          <div class="project wproj3">
+            <div class="projdesc">
+              <h3>PROJECT #3</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
+          <div class="project wproj4">
+            <div class="projdesc">
+              <h3>PROJECT #4</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
           
+          <div id="wprojtext">Test text for project description or intro.</div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- Page Three / GRAPHICS -->
+      
+    <div id="pagethreelink" class="third-page">
+      <div id="pagethreehead" class="head"></div>
+      <div id="graphicslcontent" class="lcontent">  
+        <div id="graphicstitle" class="pagetitle">
+          <h1>GRAPHIC</h1>
+        </div>
+        <div id="graphicstext" class="pagetext">
+          <p>This is what I can do for you or your company. This is the experience I have and the type of people I want to work with. Here's a specific description of potential problems you may have and how I can help solve them!</p>
+        </div> 
+        <div id="graphicsiconcontainer" class="iconcontainer">
+          <img src="images/graphics_icon_duotone_edge.png">
+          <ul id="graphicsskills" class="skills">
+            <li>SKILL ONE</li>
+            <li>SKILL TWO</li>
+            <li>SKILL THREE</li>
+            <li>SKILL FOUR</li>
+            <li>SKILL FIVE</li>
+          </ul>
+        </div> 
+      </div>
+      <div id="graphicsrcontent" class="rcontent">
+        <div id="graphicsrcontainer" class="projectcontainer">
+          <div class="project gproj1">
+            <div class="projdesc">
+              <h3>PROJECT #1</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
+          <div class="project gproj2">
+            <div class="projdesc">
+              <h3>PROJECT #2</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
+          <div class="project gproj3">
+            <div class="projdesc">
+              <h3>PROJECT #3</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
+          <div class="project gproj4">
+            <div class="projdesc">
+              <h3>PROJECT #4</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
+          
+          <div id="gprojtext">
+            <p>Test text for project description or intro.</p>
+          </div>
+        </div>
+      </div>
     </div>
     
-    <div id="pagethreelink" class="third-page">
-      <div id="pagethreehead"></div>
-      <h2 >Third page stuff..</h2>
-    </div>
+    <!-- Page Four / SOUNDS -->
     
     <div id="pagefourlink" class="fourth-page">
-      <div id="pagefourhead"></div>
-      <h2 >Fourth page stuff..</h2>
+      <div id="pagefourhead" class="head"></div>
+      <div id="soundslcontent" class="lcontent">  
+        <div id="soundsstitle" class="pagetitle">
+          <h1>SOUND</h1>
+        </div>
+        <div id="soundstext" class="pagetext">
+          <p>This is what I can do for you or your company. This is the experience I have and the type of people I want to work with. Here's a specific description of potential problems you may have and how I can help solve them!</p>
+        </div> 
+        <div id="soundsiconcontainer" class="iconcontainer">
+          <img class="pageicon" src="images/sounds_duotone_2_edge.png">
+          <ul id="soundsskills" class="skills">
+            <li>SKILL ONE</li>
+            <li>SKILL TWO</li>
+            <li>SKILL THREE</li>
+            <li>SKILL FOUR</li>
+            <li>SKILL FIVE</li>
+          </ul>
+        </div> 
+      </div>
+      <div id="soundsrcontent" class="rcontent">
+        <div id="soundsrcontainer" class="projectcontainer">
+          <div class="project sproj1">
+            <div class="projdesc">
+              <h3>PROJECT #1</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
+          <div class="project sproj2">
+            <div class="projdesc">
+              <h3>PROJECT #2</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
+          <div class="project sproj3">
+            <div class="projdesc">
+              <h3>PROJECT #3</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
+          <div class="project sproj4">
+            <div class="projdesc">
+              <h3>PROJECT #4</h3>
+              <p>Quick description of the project.</p>
+            </div>
+          </div>
+          
+          <div id="sprojtext">Test text for project description or intro.</div>
+        </div>
+      </div>
     </div>
     
+    
+    <!-- Page Five / CONTACT -->
+    
+     <div id="pagefivelink" class="fifth-page">
+      <div id="pagefivehead" class="head"></div>
+      <div id="contactlcontent" class="lcontent">  
+        <div id="contacttitle" class="pagetitle">
+          <h1>CONTACT</h1>
+        </div>
+        <div id="contacttext" class="pagetext">
+          <p>This is what I can do for you or your company. This is the experience I have and the type of people I want to work with. Here's a specific description of potential problems you may have and how I can help solve them!</p>
+        </div> 
+        <div id="contactcontainer" class="iconcontainer">
+          <img src="images/self_icon_cropped_edge.png">
+        </div> 
+      </div>
+      <div id="contactrcontent" class="rcontent">
+        <div id="contactrcontainer" class="projectcontainer">
+          <div id="form-main">
+            <div id="form-div">
+              <form class="form" id="form1">
+                <p class="name">
+                  <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                </p>
+                <p class="email">
+                  <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                </p>
+                <p class="text">
+                  <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                </p>
+                <div class="submit">
+                  <input type="submit" value="SEND" id="button-blue"/>
+                  <div class="ease"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
   </div>
-  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="scripts/main_java.js"></script>
 <script src="scripts/textition.js"></script>
